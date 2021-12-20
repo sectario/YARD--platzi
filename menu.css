@@ -1,0 +1,54 @@
+:root{
+    --white: #ffffff;
+    --black: #000000;
+    --very-light-pink: #c7c7c7;
+    --text-input-field: #F7F7F7;
+    --hostpital-green: #acd9b2;
+    --sm: 14px;
+    --md: 16px;
+    --lg: 18px;
+}
+body{
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+}
+menu{
+    width: 100px;
+    height: auto;
+    border: 1px solid var(--very-light-pink);
+    border-radius: 8px;
+    list-style: none;
+    padding: 20px 20px 0px 20px;
+    margin: 0;
+}
+    menu li{
+        text-align: end;
+    }
+        menu li:last-child{
+            text-align: end;
+            padding-top: 8px;
+            margin-top: 4px;
+            border-top: 1px solid var(--very-light-pink);
+            color: var(--hostpital-green);
+        }
+            menu li:last-child{
+                text-align: end;
+                padding-top: 12px;
+                margin-top: 8px;
+                border-top: 1px solid var(--very-light-pink);
+            }
+            menu li:last-child a{
+                color: var(--hostpital-green);
+                text-decoration: none;
+                font-size: var(--sm);
+                /* Es propieddad se aplica al último elemeno porque tiene un grado mayor de especificidad
+                teniendo en cuenta la configuracion que sigue que es general para la lista. */
+            }
+            menu li a{
+                color: var(--black);
+                text-decoration: none;
+                font-size: var(--sm);
+                display: inline-block;
+                margin-bottom: 16px;
+                font-weight: 700;
+            }
