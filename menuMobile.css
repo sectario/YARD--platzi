@@ -14,6 +14,11 @@ body{
 }
 menu{
     padding: 24px;
+    display: flex;
+    flex-direction: column;
+    width: 120px;
+    justify-content: space-between;
+    height: 100%;
 }
 menu ul{
     color: var(--black);
@@ -24,21 +29,24 @@ menu ul{
     margin-bottom: 32px;
     
 }
-menu ul:nth-child(1){
-    padding: 16px;
-    border-bottom: 1px solid var(--very-light-pink);
-}
+    menu ul:nth-child(1){
+        padding: 16px;
+        border-bottom: 1px solid var(--very-light-pink);
+    }
 
-menu ul li{
-    margin-top: 14px;
-}
-menu a{
-    text-decoration: none;
-    color: var(--black);
-    font-weight: bold;
-}
+        menu ul li{
+            margin-top: 14px;
+        }
+        menu a{
+            text-decoration: none;
+            color: var(--black);
+            font-weight: bold;
+        }
 .infocuenta{
     margin-top: 24px;
+}
+menu div{
+    height: 100%;
 }
 
 menu div p:nth-child(1){
